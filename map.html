@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map-canvas {
+        width: 1000px;
+        height: 500px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSd-ELK0fMGGkhObvM3IEq8sEsSvDUluc"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-1.256426, 36.843197),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+		
+		var mlangoKubwa = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.267214, 36.843751),
+		  map: map,
+		});
+		
+		var mlangoKubwainfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/mlangokubwa/">Mlango Kubwa</a>'
+		});
+		google.maps.event.addListener(mlangoKubwa, 'click', function() {
+			mlangoKubwainfowindow.open(map,mlangoKubwa);
+		});
+
+
+		
+		
+		
+		var ngei = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.329869, 36.78176),
+		  map: map,
+		});
+		
+		var ngeiinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/ngei/">Ngei</a>'
+		});
+		google.maps.event.addListener(ngei, 'click', function() {
+			ngeiinfowindow.open(map,ngei);
+		});
+		
+			
+		
+		
+		
+		
+		var babaDogo = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.2456719, 36.8815276),
+		  map: map,
+		});
+
+		var babaDogoinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/babadogo/">Baba Dogo</a>'
+		});
+		google.maps.event.addListener(babaDogo, 'click', function() {
+			babaDogoinfowindow.open(map,babaDogo);
+		});
+
+
+
+		
+		
+		var korogocho = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.2503642, 36.8909401),
+		  map: map,
+		});
+
+		var korogochoinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/korogocho/">Korogocho</a>'
+		});
+		google.maps.event.addListener(korogocho, 'click', function() {
+			korogochoinfowindow.open(map,korogocho);
+		});		
+		
+		
+		
+		
+		
+		var kwaReuben = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.31333, 36.871694),
+		  map: map,
+		});
+
+		var kwaReubeninfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/kwareuben/">Kwa Reuben</a>'
+		});
+		google.maps.event.addListener(kwaReuben, 'click', function() {
+			kwaReubeninfowindow.open(map,kwaReuben);
+		});			
+		
+		
+		
+		
+		
+		var lainiSaba = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.312912, 36.789312),
+		  map: map,
+		});
+		
+		var lainiSabainfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/lainisaba/">Laini Saba</a>'
+		});
+		google.maps.event.addListener(lainiSaba, 'click', function() {
+			lainiSabainfowindow.open(map,lainiSaba);
+		});	
+		
+		
+		
+		
+		
+		var kahawa = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.1872338, 36.9030401),
+		  map: map,
+		});
+		
+		var kahawainfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/kahawa/">Kahawa</a>'
+		});
+		google.maps.event.addListener(kahawa, 'click', function() {
+			kahawainfowindow.open(map,kahawa);
+		});
+		
+		
+		
+		
+		var karura = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.256426, 36.843197),
+		  map: map,
+		});	
+		
+		var karurainfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/karura/">Karura</a>'
+		});
+		
+		google.maps.event.addListener(karura, 'click', function() {
+			karurainfowindow.open(map,karura);
+		});
+		
+		
+		
+		
+		
+
+		var kasarani = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.2152316, 36.9024397),
+		  map: map,
+		});
+		
+		var kasaraniinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/kasarani/">Kasarani</a>'
+		});
+		
+		google.maps.event.addListener(kasarani, 'click', function() {
+			kasaraniinfowindow.open(map,kasarani);
+		});
+		
+		
+		
+		
+		var roysambu = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.2184586, 36.8869064),
+		  map: map,
+		});
+
+		var roysambuinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/roysambu/">Roysambu</a>'
+		});
+		
+		google.maps.event.addListener(roysambu, 'click', function() {
+			roysambuinfowindow.open(map,roysambu);
+		});		
+		
+		
+		
+		
+		
+		var umoja2 = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.27783, 36.89741),
+		  map: map,
+		});
+		
+		var umoja2infowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/umoja2/">Umoja 2</a>'
+		});
+		
+		google.maps.event.addListener(umoja2, 'click', function() {
+			umoja2infowindow.open(map,umoja2);
+		});	
+		
+		
+		
+
+		var Zimmerman = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.210542, 36.8976626),
+		  map: map,
+		});	
+
+		var Zimmermaninfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/zimmerman/">Zimmerman</a>'
+		});
+		
+		google.maps.event.addListener(Zimmerman, 'click', function() {
+			Zimmermaninfowindow.open(map,Zimmerman);
+		});		
+
+		
+
+		var dandora3 = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.2482059, 36.9043843),
+		  map: map,
+		});
+
+		var dandora3infowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/dandora3/">Dandora III</a>'
+		});
+		
+		google.maps.event.addListener(dandora3, 'click', function() {
+			dandora3infowindow.open(map,dandora3);
+		});		
+
+		
+		
+		var pipeline = new google.maps.Marker({
+		  position: new google.maps.LatLng(-1.316759, 36.892401),
+		  map: map,
+		});	
+
+		var pipelineinfowindow = new google.maps.InfoWindow({
+			content: '<a href="http://sautimtaani.co.ke/main/ward-page/pipeline/">Pipeline</a>'
+		});
+		
+		google.maps.event.addListener(pipeline, 'click', function() {
+			pipelineinfowindow.open(map,pipeline);
+		});	
+	  }
+	  
+	  
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
